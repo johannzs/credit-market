@@ -1,0 +1,36 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+(function(t){if(!t.loadCSS){return};var e=loadCSS.relpreload={};e.support=function(){try{return t.document.createElement('link').relList.supports('preload')}catch(e){return!1}};e.poly=function(){var n=t.document.getElementsByTagName('link');for(var r=0;r<n.length;r++){var e=n[r];if(e.rel==='preload'&&e.getAttribute('as')==='style'){t.loadCSS(e.href,e,e.getAttribute('media'));e.rel=null}}};if(!e.support()){e.poly();var r=t.setInterval(e.poly,300);if(t.addEventListener){t.addEventListener('load',function(){e.poly();t.clearInterval(r)})};if(t.attachEvent){t.attachEvent('onload',function(){t.clearInterval(r)})}}}(this));
+
+}
+/*
+     FILE ARCHIVED ON 12:50:36 Oct 12, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:07:37 Jul 12, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.235
+  RedisCDXSource: 2.096
+  esindex: 0.016
+  captures_list: 315.064
+  exclusion.robots.policy: 0.22
+  load_resource: 195.183
+  CDXLines.iter: 28.369 (3)
+  LoadShardBlock: 280.539 (3)
+  PetaboxLoader3.datanode: 340.846 (4)
+  PetaboxLoader3.resolve: 65.039
+*/

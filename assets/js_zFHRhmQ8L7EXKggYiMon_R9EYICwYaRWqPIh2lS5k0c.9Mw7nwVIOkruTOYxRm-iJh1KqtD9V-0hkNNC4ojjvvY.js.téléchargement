@@ -1,0 +1,39 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+;var $=jQuery,App=function(){var y=!1,t=!1,o=!1,e=!1,n=[],g=function(){t=!!navigator.userAgent.match(/MSIE 9.0/);o=!!navigator.userAgent.match(/MSIE 10.0/);e=navigator.userAgent.indexOf('MSIE ')>-1||navigator.userAgent.indexOf('Trident/')>-1;if(o){$('html').addClass('ie10')};if(t){$('html').addClass('ie9')};if(e){$('html').addClass('ie')}},i=function(){for(var t=0;t<n.length;t++){var o=n[t];o.call()}},r=function(){$('[data-auto-height]').each(function(){var t=$(this),e=$('[data-height]',t),o=0,n=t.attr('data-mode'),a=parseInt(t.attr('data-offset')?t.attr('data-offset'):0);e.each(function(){if($(this).attr('data-height')=='height'){$(this).css('height','')}
+else{$(this).css('min-height','')};var t=(n=='base-height'?$(this).outerHeight():$(this).outerHeight(!0));if(t>o){o=t}});o=o+a;e.each(function(){if($(this).attr('data-height')=='height'){$(this).css('height',o)}
+else{$(this).css('min-height',o)}});if(t.attr('data-related')){$(t.attr('data-related')).css('height',t.height())}})},m=function(){var t;$(window).resize(function(){if(t){clearTimeout(t)};t=setTimeout(function(){i()},50)})},v=function(){$('body').on('click','.c-checkbox > label, .c-radio > label',function(){var e=$(this),t=$(this).children('span:first-child');t.addClass('inc');var o=t.clone(!0);t.before(o);$('.'+t.attr('class')+':last',e).remove()})},f=function(){$('body').on('shown.bs.collapse','.accordion.scrollable',function(t){Jango.scrollTo($(t.target))})},p=function(){if(location.hash){var t=encodeURI(location.hash.substr(1));$('a[href="#'+t+'"]').parents('.tab-pane:hidden').each(function(){var t=$(this).attr('id');$('a[href="#'+t+'"]').click()});$('a[href="#'+t+'"]').click()}},u=function(){$('body').on('hide.bs.modal',function(){if($('.modal:visible').size()>1&&$('html').hasClass('modal-open')===!1){$('html').addClass('modal-open')}
+else if($('.modal:visible').size()<=1){$('html').removeClass('modal-open')}});$('body').on('show.bs.modal','.modal',function(){if($(this).hasClass('modal-scroll')){$('body').addClass('modal-open-noscroll')}});$('body').on('hide.bs.modal','.modal',function(){$('body').removeClass('modal-open-noscroll')});$('body').on('hidden.bs.modal','.modal:not(.modal-cached)',function(){$(this).removeData('bs.modal')})},c=function(){$('.tooltips').tooltip()},h=function(){$('body').on('click','.dropdown-menu.hold-on-click',function(t){t.stopPropagation()})},d=function(){$('body').on('click','[data-close="alert"]',function(t){$(this).parent('.alert').hide();$(this).closest('.note').hide();t.preventDefault()});$('body').on('click','[data-close="note"]',function(t){$(this).closest('.note').hide();t.preventDefault()});$('body').on('click','[data-remove="note"]',function(t){$(this).closest('.note').remove();t.preventDefault()})},b=function(){$('[data-hover="dropdown"]').not('.hover-initialized').each(function(){$(this).dropdownHover();$(this).addClass('hover-initialized')})},a,s=function(){$('.popovers').popover();$(document).on('click.bs.popover.data-api',function(t){if(a){a.popover('hide')}})},l=function(){if(t||o){$('input[placeholder]:not(.placeholder-no-fix), textarea[placeholder]:not(.placeholder-no-fix)').each(function(){var t=$(this);if(t.val()===''&&t.attr('placeholder')!==''){t.addClass('placeholder').val(t.attr('placeholder'))};t.focus(function(){if(t.val()==t.attr('placeholder')){t.val('')}});t.blur(function(){if(t.val()===''||t.val()==t.attr('placeholder')){t.val(t.attr('placeholder'))}})})}};return{init:function(){r();this.addResizeHandler(r);g();m();v();d();h();p();c();s();f();u();l()},changeLogo:function(t){var o='../assets/jango/img/layout/logos/'+t+'.png';$('.c-brand img.c-desktop-logo').attr('src',o)},setLastPopedPopover:function(t){a=t},addResizeHandler:function(t){n.push(t)},runResizeHandlers:function(){i()},scrollTo:function(t,e){var o=(t&&t.size()>0)?t.offset().top:0;if(t){if($('body').hasClass('page-header-fixed')){o=o-$('.page-header').height()};o=o+(e?e:-1*t.height())};$('html,body').animate({scrollTop:o},'slow')},scrollTop:function(){Jango.scrollTo()},initFancybox:function(){handleFancybox()},getActualVal:function(t){t=$(t);if(t.val()===t.attr('placeholder')){return''};return t.val()},getURLParameter:function(t){var a=window.location.search.substring(1),o,e,n=a.split('&');for(o=0;o<n.length;o++){e=n[o].split('=');if(e[0]==t){return unescape(e[1])}};return null},isTouchDevice:function(){try{document.createEvent('TouchEvent');return!0}catch(t){return!1}},getViewPort:function(){var t=window,o='inner';if(!('innerWidth' in window)){o='client';t=document.documentElement||document.body};return{width:t[o+'Width'],height:t[o+'Height']}},getUniqueID:function(t){return'prefix_'+Math.floor(Math.random()*(new Date()).getTime())},isIE:function(){return e},isIE9:function(){return t},isIE10:function(){return o},getBreakpoint:function(t){var o={'xs':480,'sm':768,'md':992,'lg':1200};return o[t]?o[t]:0}}}();
+
+}
+/*
+     FILE ARCHIVED ON 12:51:52 Oct 12, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:07:43 Jul 12, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 77.8
+  exclusion.robots: 0.197
+  exclusion.robots.policy: 0.183
+  RedisCDXSource: 2.685
+  esindex: 0.013
+  LoadShardBlock: 45.996 (3)
+  PetaboxLoader3.datanode: 49.774 (4)
+  CDXLines.iter: 25.487 (3)
+  load_resource: 37.966
+  PetaboxLoader3.resolve: 18.793
+*/

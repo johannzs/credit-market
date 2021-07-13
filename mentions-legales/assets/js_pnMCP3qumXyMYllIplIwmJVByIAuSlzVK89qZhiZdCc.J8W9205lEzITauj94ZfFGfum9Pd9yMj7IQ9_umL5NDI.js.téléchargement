@@ -1,0 +1,38 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+(function(t,e){'use strict';e.webform=e.webform||{};e.webform.detailsToggle=e.webform.detailsToggle||{};e.webform.detailsToggle.options=e.webform.detailsToggle.options||{};e.behaviors.webformDetailsToggle={attach:function(i){t('.js-webform-details-toggle',i).once('webform-details-toggle').each(function(){var i=t(this),o=i.find('.webform-tabs'),f=(o.length)?'.webform-tab':'.js-webform-details-toggle',s=i.find('details').filter(function(){var e=t(this).parentsUntil(f);return(e.find('details').length===0)});if(s.length<2){return};var r=t.extend({button:'<button type="button" class="webform-details-toggle-state"></button>'},e.webform.detailsToggle.options);var n=t(r.button).attr('title',e.t('Toggle details widget state.')).on('click',function(o){var n;if(l(i)){i.find('details').removeAttr('open');n=0}
+else{i.find('details').attr('open','open');n=1};a(i);if(e.webformDetailsSaveGetName){i.find('details').each(function(){var l=e.webformDetailsSaveGetName(t(this));if(l){localStorage.setItem(l,n)}})}}).wrap('<div class="webform-details-toggle-state-wrapper"></div>').parent();if(o.length){o.find('.item-list:first-child').eq(0).before(n)}
+else{s.eq(0).before(n)};a(i)})}};function l(e){return(e.find('details[open]').length===e.find('details').length)};function a(t){var a=l(t),o=(a)?e.t('Collapse all'):e.t('Expand all');t.find('.webform-details-toggle-state').html(o);var i=(a)?e.t('All details have been expanded.'):e.t('All details have been collapsed.');e.announce(i)}})(jQuery,Drupal);
+
+}
+/*
+     FILE ARCHIVED ON 12:52:24 Oct 12, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:07:44 Jul 12, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 170.99
+  exclusion.robots: 0.075
+  exclusion.robots.policy: 0.069
+  RedisCDXSource: 1.842
+  esindex: 0.006
+  LoadShardBlock: 149.431 (3)
+  PetaboxLoader3.datanode: 121.068 (4)
+  CDXLines.iter: 17.88 (3)
+  load_resource: 149.931
+  PetaboxLoader3.resolve: 57.611
+*/

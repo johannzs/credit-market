@@ -1,0 +1,37 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+(function(e,r){'use strict';r.behaviors.webformDetailsSave={attach:function(t){if(!window.localStorage){return};e('details > summary',t).once('webform-details-summary-save').click(function(){var t=e(this).parent();if(t[0].hasAttribute('data-webform-details-nosave')){return};var a=r.webformDetailsSaveGetName(t);if(!a){return};var i=(t.attr('open')!=='open')?'1':'0';localStorage.setItem(a,i)});e('details',t).once('webform-details-save').each(function(){var t=e(this),i=r.webformDetailsSaveGetName(t);if(!i){return};var a=localStorage.getItem(i);if(a===null){return};if(a==='1'){t.attr('open','open')}
+else{t.removeAttr('open')}})}};r.webformDetailsSaveGetName=function(e){if(!window.localStorage){return''};var i=e.attr('data-webform-element-id');if(i){return'Drupal.webform.'+i.replace('--','.')};var t=e.attr('id');if(!t){return''};var a=e.parents('form');if(!a.length||!a.attr('id')){return''};var r=a.attr('id');if(!r){return''};r=r.replace(/--.+?$/,'').replace(/-/g,'_');t=t.replace(/--.+?$/,'').replace(/-/g,'_');return'Drupal.webform.'+r+'.'+t}})(jQuery,Drupal);
+
+}
+/*
+     FILE ARCHIVED ON 12:52:26 Oct 12, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:07:44 Jul 12, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 139.859
+  CDXLines.iter: 25.358 (3)
+  RedisCDXSource: 6.361
+  esindex: 0.017
+  exclusion.robots.policy: 0.195
+  load_resource: 270.143
+  LoadShardBlock: 104.065 (3)
+  PetaboxLoader3.resolve: 127.043
+  PetaboxLoader3.datanode: 205.02 (4)
+  exclusion.robots: 0.209
+*/

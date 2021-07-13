@@ -1,0 +1,36 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+;var LayoutQtySpinner=function(){return{init:function(){$('.c-spinner .btn:first-of-type').on('click',function(){var t=$(this).attr('data_input');$('.c-spinner input.'+t).val(parseInt($('.c-spinner input.'+t).val(),10)+1)});$('.c-spinner .btn:last-of-type').on('click',function(){var t=$(this).attr('data_input');if($('.c-spinner input.'+t).val()!=0){$('.c-spinner input.'+t).val(parseInt($('.c-spinner input.'+t).val(),10)-1)}})}}}(),LayoutCheckboxVisibilityToggle=function(){return{init:function(){$('.c-toggle-hide').each(function(){var n=$(this).find('input.c-check'),i=$(this).data('animation-speed'),t=$('.'+$(this).data('object-selector'));t.hide();if(typeof i==='undefined'){i='slow'};$(n).on('change',function(){if($(t).is(':hidden')){$(t).show(i)}
+else{$(t).slideUp(i)}})})}}}(),LayoutShippingCalculator=function(){return{init:function(){var t=$('.c-shipping-calculator'),i=$(t).data('name'),n=$(t).data('total-selector'),e=$(t).data('subtotal-selector'),a=parseFloat($('.'+e).text());$('input[name='+i+']',t).on('change',function(){var e=parseFloat($('input[name='+i+']:checked',t).val()),c=a+e;$('.'+n).text(c.toFixed(2))})}}}(),PriceSlider=function(){return{init:function(){$('.c-price-slider').slider()}}}(),$=jQuery;$(document).ready(function(){LayoutQtySpinner.init();LayoutCheckboxVisibilityToggle.init();LayoutShippingCalculator.init();PriceSlider.init()});
+
+}
+/*
+     FILE ARCHIVED ON 12:51:57 Oct 12, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:07:42 Jul 12, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 75.337
+  exclusion.robots: 0.165
+  exclusion.robots.policy: 0.154
+  RedisCDXSource: 0.805
+  esindex: 0.011
+  LoadShardBlock: 52.272 (3)
+  PetaboxLoader3.datanode: 50.821 (4)
+  CDXLines.iter: 19.148 (3)
+  load_resource: 90.818
+*/

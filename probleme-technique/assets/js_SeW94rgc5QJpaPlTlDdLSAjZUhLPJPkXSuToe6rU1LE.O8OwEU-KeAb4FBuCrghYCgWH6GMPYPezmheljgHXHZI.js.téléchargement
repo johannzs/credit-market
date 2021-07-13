@@ -1,0 +1,38 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+(function(e){var t=['DOMMouseScroll','mousewheel'];if(e.event.fixHooks){for(var i=t.length;i;){e.event.fixHooks[t[--i]]=e.event.mouseHooks}};e.event.special.mousewheel={setup:function(){if(this.addEventListener){for(var e=t.length;e;){this.addEventListener(t[--e],n,!1)}}
+else{this.onmousewheel=n}},teardown:function(){if(this.removeEventListener){for(var e=t.length;e;){this.removeEventListener(t[--e],n,!1)}}
+else{this.onmousewheel=null}}};e.fn.extend({mousewheel:function(e){return e?this.bind('mousewheel',e):this.trigger('mousewheel')},unmousewheel:function(e){return this.unbind('mousewheel',e)}});function n(n){var t=n||window.event,o=[].slice.call(arguments,1),i=0,h=!0,l=0,s=0;n=e.event.fix(t);n.type='mousewheel';if(t.wheelDelta){i=t.wheelDelta/120};if(t.detail){i=-t.detail/3};s=i;if(t.axis!==undefined&&t.axis===t.HORIZONTAL_AXIS){s=0;l=-1*i};if(t.wheelDeltaY!==undefined){s=t.wheelDeltaY/120};if(t.wheelDeltaX!==undefined){l=-1*t.wheelDeltaX/120};o.unshift(n,i,l,s);return(e.event.dispatch||e.event.handle).apply(this,o)}})(jQuery);
+
+}
+/*
+     FILE ARCHIVED ON 12:51:41 Oct 12, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:07:42 Jul 12, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 140.179
+  exclusion.robots: 0.086
+  exclusion.robots.policy: 0.079
+  RedisCDXSource: 3.297
+  esindex: 0.009
+  LoadShardBlock: 115.552 (3)
+  PetaboxLoader3.datanode: 132.514 (4)
+  CDXLines.iter: 18.964 (3)
+  load_resource: 79.412
+  PetaboxLoader3.resolve: 34.703
+*/

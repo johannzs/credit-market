@@ -1,0 +1,39 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+;jQuery.easing.jswing=jQuery.easing.swing,jQuery.extend(jQuery.easing,{def:'easeOutQuad',swing:function(n,e,t,u,a){return jQuery.easing[jQuery.easing.def](n,e,t,u,a)},easeInQuad:function(a,n,e,t,u){return t*(n/=u)*n+e},easeOutQuad:function(a,n,e,t,u){return-t*(n/=u)*(n-2)+e},easeInOutQuad:function(a,n,e,t,u){return(n/=u/2)<1?t/2*n*n+e:-t/2*(--n*(n-2)-1)+e},easeInCubic:function(a,n,e,t,u){return t*(n/=u)*n*n+e},easeOutCubic:function(a,n,e,t,u){return t*((n=n/u-1)*n*n+1)+e},easeInOutCubic:function(a,n,e,t,u){return(n/=u/2)<1?t/2*n*n*n+e:t/2*((n-=2)*n*n+2)+e},easeInQuart:function(a,n,e,t,u){return t*(n/=u)*n*n*n+e},easeOutQuart:function(a,n,e,t,u){return-t*((n=n/u-1)*n*n*n-1)+e},easeInOutQuart:function(a,n,e,t,u){return(n/=u/2)<1?t/2*n*n*n*n+e:-t/2*((n-=2)*n*n*n-2)+e},easeInQuint:function(a,n,e,t,u){return t*(n/=u)*n*n*n*n+e},easeOutQuint:function(a,n,e,t,u){return t*((n=n/u-1)*n*n*n*n+1)+e},easeInOutQuint:function(a,n,e,t,u){return(n/=u/2)<1?t/2*n*n*n*n*n+e:t/2*((n-=2)*n*n*n*n+2)+e},easeInSine:function(a,t,e,n,u){return-n*Math.cos(t/u*(Math.PI/2))+n+e},easeOutSine:function(a,e,n,t,u){return t*Math.sin(e/u*(Math.PI/2))+n},easeInOutSine:function(a,e,n,t,u){return-t/2*(Math.cos(Math.PI*e/u)-1)+n},easeInExpo:function(a,e,n,t,u){return 0==e?n:t*Math.pow(2,10*(e/u-1))+n},easeOutExpo:function(a,e,n,t,u){return e==u?n+t:t*(-Math.pow(2,-10*e/u)+1)+n},easeInOutExpo:function(a,n,e,t,u){return 0==n?e:n==u?e+t:(n/=u/2)<1?t/2*Math.pow(2,10*(n-1))+e:t/2*(-Math.pow(2,-10*--n)+2)+e},easeInCirc:function(a,n,e,t,u){return-t*(Math.sqrt(1-(n/=u)*n)-1)+e},easeOutCirc:function(a,n,e,t,u){return t*Math.sqrt(1-(n=n/u-1)*n)+e},easeInOutCirc:function(a,n,e,t,u){return(n/=u/2)<1?-t/2*(Math.sqrt(1-n*n)-1)+e:t/2*(Math.sqrt(1-(n-=2)*n)+1)+e},easeInElastic:function(a,e,t,n,u){var s=1.70158,r=0,i=n;if(0==e)return t;if(1==(e/=u))return t+n;if(r||(r=.3*u),i<Math.abs(n)){i=n;var s=r/4}
+else var s=r/(2*Math.PI)*Math.asin(n/i);return-(i*Math.pow(2,10*(e-=1))*Math.sin(2*(e*u-s)*Math.PI/r))+t},easeOutElastic:function(a,e,t,n,u){var s=1.70158,r=0,i=n;if(0==e)return t;if(1==(e/=u))return t+n;if(r||(r=.3*u),i<Math.abs(n)){i=n;var s=r/4}
+else var s=r/(2*Math.PI)*Math.asin(n/i);return i*Math.pow(2,-10*e)*Math.sin(2*(e*u-s)*Math.PI/r)+n+t},easeInOutElastic:function(a,n,t,e,u){var s=1.70158,r=0,i=e;if(0==n)return t;if(2==(n/=u/2))return t+e;if(r||(r=.3*u*1.5),i<Math.abs(e)){i=e;var s=r/4}
+else var s=r/(2*Math.PI)*Math.asin(e/i);return 1>n?-.5*i*Math.pow(2,10*(n-=1))*Math.sin(2*(n*u-s)*Math.PI/r)+t:i*Math.pow(2,-10*(n-=1))*Math.sin(2*(n*u-s)*Math.PI/r)*.5+e+t},easeInBack:function(a,n,e,t,u,r){return void 0==r&&(r=1.70158),t*(n/=u)*n*((r+1)*n-r)+e},easeOutBack:function(a,n,e,t,u,r){return void 0==r&&(r=1.70158),t*((n=n/u-1)*n*((r+1)*n+r)+1)+e},easeInOutBack:function(a,n,e,t,u,r){return void 0==r&&(r=1.70158),(n/=u/2)<1?t/2*n*n*(((r*=1.525)+1)*n-r)+e:t/2*((n-=2)*n*(((r*=1.525)+1)*n+r)+2)+e},easeInBounce:function(t,u,a,n,e){return n-jQuery.easing.easeOutBounce(t,e-u,0,n,e)+a},easeOutBounce:function(a,n,e,t,u){return(n/=u)<1/2.75?7.5625*t*n*n+e:2/2.75>n?t*(7.5625*(n-=1.5/2.75)*n+.75)+e:2.5/2.75>n?t*(7.5625*(n-=2.25/2.75)*n+.9375)+e:t*(7.5625*(n-=2.625/2.75)*n+.984375)+e},easeInOutBounce:function(u,e,a,t,n){return n/2>e?.5*jQuery.easing.easeInBounce(u,2*e,0,t,n)+a:.5*jQuery.easing.easeOutBounce(u,2*e-n,0,t,n)+.5*t+a}});
+
+}
+/*
+     FILE ARCHIVED ON 12:51:04 Oct 12, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:07:41 Jul 12, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 726.835
+  exclusion.robots: 0.085
+  exclusion.robots.policy: 0.076
+  RedisCDXSource: 7.155
+  esindex: 0.009
+  LoadShardBlock: 693.032 (3)
+  PetaboxLoader3.datanode: 497.317 (4)
+  CDXLines.iter: 23.583 (3)
+  load_resource: 129.711
+  PetaboxLoader3.resolve: 75.621
+*/

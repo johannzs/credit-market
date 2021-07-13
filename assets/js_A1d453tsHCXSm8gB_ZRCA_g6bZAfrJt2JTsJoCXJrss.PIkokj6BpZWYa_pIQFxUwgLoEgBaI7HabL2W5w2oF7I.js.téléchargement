@@ -1,0 +1,36 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+(function(e,s){'use strict';s.behaviors.webformMessageClose={attach:function(s){e(s).find('.js-webform-message--close').once('webform-message--close').each(function(){var s=e(this),o=s.attr('data-message-id'),i=s.attr('data-message-storage'),r=s.attr('data-message-close-effect')||'hide';switch(r){case'slide':r='slideUp';break;case'fade':r='fadeOut';break};if(a(s,i,o)){return};if(s.attr('style')!=='display: none;'){s.show()};s.find('.js-webform-message__link').on('click',function(e){s[r]();t(s,i,o);s.trigger('close');e.preventDefault()})})}};function a(e,s,a){if(!a||!s){return!1};switch(s){case'local':if(window.localStorage){return localStorage.getItem('Drupal.webform.message.'+a)||!1};return!1;case'session':if(window.sessionStorage){return sessionStorage.getItem('Drupal.webform.message.'+a)||!1};return!1;default:return!1}};function t(s,a,t){if(!t||!a){return};switch(a){case'local':if(window.localStorage){localStorage.setItem('Drupal.webform.message.'+t,!0)};break;case'session':if(window.sessionStorage){sessionStorage.setItem('Drupal.webform.message.'+t,!0)};break;case'user':case'state':case'custom':e.get(s.find('.js-webform-message__link').attr('href'));return!0}}})(jQuery,Drupal);
+
+}
+/*
+     FILE ARCHIVED ON 12:52:28 Oct 12, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:07:44 Jul 12, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 263.586
+  exclusion.robots: 0.102
+  exclusion.robots.policy: 0.094
+  RedisCDXSource: 4.256
+  esindex: 0.007
+  LoadShardBlock: 239.487 (3)
+  PetaboxLoader3.datanode: 251.298 (4)
+  CDXLines.iter: 17.931 (3)
+  load_resource: 95.482
+  PetaboxLoader3.resolve: 62.619
+*/
