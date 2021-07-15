@@ -1,0 +1,38 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+(function(r,t,a){r.fn.drupalGetSummary=function(){var t=this.data('summaryCallback');return this[0]&&t?r.trim(t(this[0])):''};r.fn.drupalSetSummary=function(r){var a=this;if(typeof r!=='function'){var t=r;r=function(){return t}};return this.data('summaryCallback',r).off('formUpdated.summary').on('formUpdated.summary',function(){a.trigger('summaryUpdated')}).trigger('summaryUpdated')};t.behaviors.formSingleSubmit={attach:function(){function t(t){var a=r(t.currentTarget),e=a.serialize(),n=a.attr('data-drupal-form-submit-last');if(n===e){t.preventDefault()}
+else{a.attr('data-drupal-form-submit-last',e)}};r('body').once('form-single-submit').on('submit.singleSubmit','form:not([method~="GET"])',t)}};function n(t){r(t).trigger('formUpdated')};function o(t){var a=r(t).find('[name]').map(function(r,t){return t.getAttribute('id')});return r.makeArray(a)};t.behaviors.formUpdated={attach:function(t){var i=r(t),f=i.is('form'),u=(f?i:i.find('form')).once('form-updated'),e=void 0;if(u.length){r.makeArray(u).forEach(function(t){var i='change.formUpdated input.formUpdated ',f=a(function(r){n(r.target)},300);e=o(t).join(',');t.setAttribute('data-drupal-form-fields',e);r(t).on(i,f)})};if(f){e=o(t).join(',');var m=r(t).attr('data-drupal-form-fields');if(e!==m){n(t)}}},detach:function(t,a,n){var e=r(t),i=e.is('form');if(n==='unload'){var o=(i?e:e.find('form')).removeOnce('form-updated');if(o.length){r.makeArray(o).forEach(function(t){t.removeAttribute('data-drupal-form-fields');r(t).off('.formUpdated')})}}}};t.behaviors.fillUserInfoFromBrowser={attach:function(t,e){var n=['name','mail','homepage'],a=r('[data-user-info-from-browser]').once('user-info-from-browser');if(a.length){n.forEach(function(r){var t=a.find('[name='+r+']'),e=localStorage.getItem('Drupal.visitor.'+r),n=t.val()===''||t.attr('data-drupal-default-value')===t.val();if(t.length&&n&&e){t.val(e)}})};a.on('submit',function(){n.forEach(function(r){var t=a.find('[name='+r+']');if(t.length){localStorage.setItem('Drupal.visitor.'+r,t.val())}})})}};var i=function(t){var a=void 0;if(t.type==='click'){a=t.currentTarget.location?t.currentTarget.location:t.currentTarget}
+else{a=window.location};var n=a.hash.substr(1);if(n){var e=r('#'+n);r('body').trigger('formFragmentLinkClickOrHashChange',[e]);setTimeout(function(){return e.trigger('focus')},300)}},e=a(i,300,!0);r(window).on('hashchange.form-fragment',e);r(document).on('click.form-fragment','a[href*="#"]',e)})(jQuery,Drupal,Drupal.debounce);
+
+}
+/*
+     FILE ARCHIVED ON 12:52:11 Oct 12, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:07:42 Jul 12, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 88.04
+  exclusion.robots: 0.08
+  exclusion.robots.policy: 0.073
+  RedisCDXSource: 1.665
+  esindex: 0.008
+  LoadShardBlock: 66.686 (3)
+  PetaboxLoader3.datanode: 57.867 (4)
+  CDXLines.iter: 17.778 (3)
+  load_resource: 69.279
+  PetaboxLoader3.resolve: 44.208
+*/
